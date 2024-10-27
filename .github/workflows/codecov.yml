@@ -10,7 +10,7 @@ on:
     paths:
       - '**.go'
       - 'go.*'
-      - '.github/workflows/codecov.yml'
+      - '.github/**'
       - 'codecov.yml'
   pull_request:
     branches:
