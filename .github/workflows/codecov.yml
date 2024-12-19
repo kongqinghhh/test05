@@ -62,6 +62,6 @@ jobs:
         go test -race --coverprofile=coverage.coverprofile --covermode=atomic ./...
     - name: Upload coverage to Codecov
       if: success() && matrix.go == '1.23' && matrix.os == 'ubuntu-latest'
-      uses: codecov/codecov-action@b9fd7d16f6d7d1b5d2bec1a2887e65ceed900238 # v4.6.0
+      uses: codecov/codecov-action@1e68e06f1dbfde0e4cefc87efeba9e4643565303 # v5.1.2
       with:
         token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
